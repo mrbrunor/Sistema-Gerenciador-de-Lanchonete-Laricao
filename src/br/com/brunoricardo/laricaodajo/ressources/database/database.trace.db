@@ -1,0 +1,1910 @@
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SET @OLD_UNIQUE_CHECKS=@@[*]UNIQUE_CHECKS, UNIQUE_CHECKS=0"; expected "identifier"; SQL statement:
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 [42001-200]
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SET @OLD_FOREIGN_KEY_CHECKS=@@[*]FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0"; expected "identifier"; SQL statement:
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 [42001-200]
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SET @OLD_SQL_MODE=@@[*]SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION'"; expected "identifier"; SQL statement:
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' [42001-200]
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE SCHEMA IF NOT EXISTS `LARICAODAJO` DEFAULT[*] CHARACTER SET UTF8"; SQL statement:
+CREATE SCHEMA IF NOT EXISTS `LaricaoDaJo` DEFAULT CHARACTER SET utf8 [42000-200]
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+USE `LaricaoDaJo` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.engine.Database.getSchema(Database.java:1936)
+	at org.h2.command.dml.Set.update(Set.java:466)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Product` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Product` (
+  `idProduct` INT NOT NULL,
+  `number` INT NOT NULL,
+  `description` VARCHAR(100) NOT NULL,
+  `value` DOUBLE NOT NULL,
+  `barcode` VARCHAR(15) NULL DEFAULT '',
+  `isIndustrialized` TINYINT(1) NULL DEFAULT 0,
+  PRIMARY KEY (`idProduct`),
+  UNIQUE INDEX `idProduct_UNIQUE` (`idProduct` ASC) VISIBLE,
+  UNIQUE INDEX `number_UNIQUE` (`number` ASC) VISIBLE)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Ingredient` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Ingredient` (
+  `idIngredient` INT NOT NULL AUTO_INCREMENT,
+  `description` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`idIngredient`),
+  UNIQUE INDEX `idIngredient_UNIQUE` (`idIngredient` ASC) VISIBLE,
+  UNIQUE INDEX `description_UNIQUE` (`description` ASC) VISIBLE)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Product_has_Ingredient` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Product_has_Ingredient` (
+  `idProduct` INT NOT NULL,
+  `idIngredient` INT NOT NULL,
+  PRIMARY KEY (`idProduct`, `idIngredient`),
+  INDEX `fk_Product_has_Ingrediente_Ingredient1_idx` (`idIngredient` ASC) VISIBLE,
+  INDEX `fk_Product_has_Ingredient_Product_idx` (`idProduct` ASC) VISIBLE,
+  CONSTRAINT `fk_Product_has_Ingredient_Product`
+    FOREIGN KEY (`idProduct`)
+    REFERENCES `LaricaoDaJo`.`Product` (`idProduct`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Product_has_Ingredient_Ingredient1`
+    FOREIGN KEY (`idIngredient`)
+    REFERENCES `LaricaoDaJo`.`Ingredient` (`idIngredient`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Employee` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Employee` (
+  `idEmployee` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(250) NOT NULL,
+  `mail` VARCHAR(150) NULL DEFAULT '',
+  `user` VARCHAR(50) NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
+  `level` INT NOT NULL DEFAULT 1,
+  `isActive` TINYINT(1) NOT NULL DEFAULT 1,
+  PRIMARY KEY (`idEmployee`),
+  UNIQUE INDEX `idEmployee_UNIQUE` (`idEmployee` ASC) VISIBLE,
+  UNIQUE INDEX `user_UNIQUE` (`user` ASC) VISIBLE)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Box` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Box` (
+  `idBox` INT NOT NULL AUTO_INCREMENT,
+  `idEmployee` INT NOT NULL,
+  `funds` DOUBLE NOT NULL DEFAULT 0,
+  `openingDate` DATETIME(10) NOT NULL,
+  `closingDate` DATETIME(10) NOT NULL,
+  `isOpen` TINYINT(1) NOT NULL DEFAULT 1,
+  `value` DOUBLE NOT NULL DEFAULT 0,
+  PRIMARY KEY (`idBox`),
+  UNIQUE INDEX `idBox_UNIQUE` (`idBox` ASC) VISIBLE,
+  INDEX `Box_idEmployee_idx` (`idEmployee` ASC) VISIBLE,
+  CONSTRAINT `Box_idEmployee`
+    FOREIGN KEY (`idEmployee`)
+    REFERENCES `LaricaoDaJo`.`Employee` (`idEmployee`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Withdrawal` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Withdrawal` (
+  `idWithdrawal` INT NOT NULL AUTO_INCREMENT,
+  `date` DATE NOT NULL,
+  `description` VARCHAR(300) NOT NULL,
+  `value` DOUBLE NOT NULL,
+  `idBox` INT NOT NULL,
+  PRIMARY KEY (`idWithdrawal`),
+  UNIQUE INDEX `idWithdrawal_UNIQUE` (`idWithdrawal` ASC) VISIBLE,
+  INDEX `withdrawal_idBox_idx` (`idBox` ASC) VISIBLE,
+  CONSTRAINT `withdrawal_idBox`
+    FOREIGN KEY (`idBox`)
+    REFERENCES `LaricaoDaJo`.`Box` (`idBox`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`FormOfPayment` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`FormOfPayment` (
+  `idFormOfPayment` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(50) NOT NULL,
+  `type` VARCHAR(50) NOT NULL,
+  `isActive` TINYINT(1) NOT NULL DEFAULT 1,
+  PRIMARY KEY (`idFormOfPayment`),
+  UNIQUE INDEX `idFormOfPayment_UNIQUE` (`idFormOfPayment` ASC) VISIBLE)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Order` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Order` (
+  `idOrder` INT NOT NULL AUTO_INCREMENT,
+  `number` INT NOT NULL,
+  `date` DATETIME(10) NOT NULL,
+  `idBox` INT NOT NULL,
+  `subtotal` DOUBLE NOT NULL,
+  `discount` DOUBLE NOT NULL DEFAULT 0,
+  `total` DOUBLE NOT NULL,
+  `idFormOfPayment` INT NOT NULL,
+  `status` VARCHAR(20) NOT NULL,
+  PRIMARY KEY (`idOrder`),
+  UNIQUE INDEX `idOrder_UNIQUE` (`idOrder` ASC) VISIBLE,
+  INDEX `Order_idBox_idx` (`idBox` ASC) VISIBLE,
+  INDEX `Order_idFormOfPayment_idx` (`idFormOfPayment` ASC) VISIBLE,
+  CONSTRAINT `Order_idBox`
+    FOREIGN KEY (`idBox`)
+    REFERENCES `LaricaoDaJo`.`Box` (`idBox`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `Order_idFormOfPayment`
+    FOREIGN KEY (`idFormOfPayment`)
+    REFERENCES `LaricaoDaJo`.`FormOfPayment` (`idFormOfPayment`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Order_has_Product` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Order_has_Product` (
+  `Order_idOrder` INT NOT NULL,
+  `Product_idProduct` INT NOT NULL,
+  `amount` INT NOT NULL,
+  `total` DOUBLE NOT NULL,
+  PRIMARY KEY (`Order_idOrder`, `Product_idProduct`),
+  INDEX `fk_Order_has_Product_Product1_idx` (`Product_idProduct` ASC) VISIBLE,
+  INDEX `fk_Order_has_Product_Order1_idx` (`Order_idOrder` ASC) VISIBLE,
+  CONSTRAINT `fk_Order_has_Product_Order1`
+    FOREIGN KEY (`Order_idOrder`)
+    REFERENCES `LaricaoDaJo`.`Order` (`idOrder`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Order_has_Product_Product1`
+    FOREIGN KEY (`Product_idProduct`)
+    REFERENCES `LaricaoDaJo`.`Product` (`idProduct`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SET SQL_MODE[*]=@OLD_SQL_MODE"; expected "@, AUTOCOMMIT, EXCLUSIVE, IGNORECASE, PASSWORD, SALT, MODE, COMPRESS_LOB, DATABASE, COLLATION, BINARY_COLLATION, UUID_COLLATION, CLUSTER, DATABASE_EVENT_LISTENER, ALLOW_LITERALS, DEFAULT_TABLE_TYPE, CREATE, HSQLDB.DEFAULT_TABLE_TYPE, PAGE_STORE, CACHE_TYPE, FILE_LOCK, DB_CLOSE_ON_EXIT, AUTO_SERVER, AUTO_SERVER_PORT, AUTO_RECONNECT, ASSERT, ACCESS_MODE_DATA, OPEN_NEW, JMX, PAGE_SIZE, RECOVER, NAMES, SCOPE_GENERATED_KEYS, SCHEMA, CATALOG, DATESTYLE, SEARCH_PATH, SCHEMA_SEARCH_PATH, JAVA_OBJECT_SERIALIZER, IGNORE_CATALOGS, SESSION, TRANSACTION, LOGSIZE, FOREIGN_KEY_CHECKS"; SQL statement:
+SET SQL_MODE=@OLD_SQL_MODE [42001-200]
+2021-01-23 20:02:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SET UNIQUE_CHECKS[*]=@OLD_UNIQUE_CHECKS"; expected "@, AUTOCOMMIT, EXCLUSIVE, IGNORECASE, PASSWORD, SALT, MODE, COMPRESS_LOB, DATABASE, COLLATION, BINARY_COLLATION, UUID_COLLATION, CLUSTER, DATABASE_EVENT_LISTENER, ALLOW_LITERALS, DEFAULT_TABLE_TYPE, CREATE, HSQLDB.DEFAULT_TABLE_TYPE, PAGE_STORE, CACHE_TYPE, FILE_LOCK, DB_CLOSE_ON_EXIT, AUTO_SERVER, AUTO_SERVER_PORT, AUTO_RECONNECT, ASSERT, ACCESS_MODE_DATA, OPEN_NEW, JMX, PAGE_SIZE, RECOVER, NAMES, SCOPE_GENERATED_KEYS, SCHEMA, CATALOG, DATESTYLE, SEARCH_PATH, SCHEMA_SEARCH_PATH, JAVA_OBJECT_SERIALIZER, IGNORE_CATALOGS, SESSION, TRANSACTION, LOGSIZE, FOREIGN_KEY_CHECKS"; SQL statement:
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS [42001-200]
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE SCHEMA IF NOT EXISTS `LARICAODAJO` DEFAULT[*] CHARACTER SET UTF8"; SQL statement:
+CREATE SCHEMA IF NOT EXISTS `LaricaoDaJo` DEFAULT CHARACTER SET utf8 [42000-200]
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+USE `LaricaoDaJo` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.engine.Database.getSchema(Database.java:1936)
+	at org.h2.command.dml.Set.update(Set.java:466)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Product` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Product` (
+  `idProduct` INT NOT NULL,
+  `number` INT NOT NULL,
+  `description` VARCHAR(100) NOT NULL,
+  `value` DOUBLE NOT NULL,
+  `barcode` VARCHAR(15) NULL DEFAULT '',
+  `isIndustrialized` TINYINT(1) NULL DEFAULT 0,
+  PRIMARY KEY (`idProduct`),
+  UNIQUE INDEX `idProduct_UNIQUE` (`idProduct` ASC) VISIBLE,
+  UNIQUE INDEX `number_UNIQUE` (`number` ASC) VISIBLE)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Ingredient` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Ingredient` (
+  `idIngredient` INT NOT NULL AUTO_INCREMENT,
+  `description` VARCHAR(50) NOT NULL,
+  PRIMARY KEY (`idIngredient`),
+  UNIQUE INDEX `idIngredient_UNIQUE` (`idIngredient` ASC) VISIBLE,
+  UNIQUE INDEX `description_UNIQUE` (`description` ASC) VISIBLE)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Product_has_Ingredient` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Product_has_Ingredient` (
+  `idProduct` INT NOT NULL,
+  `idIngredient` INT NOT NULL,
+  PRIMARY KEY (`idProduct`, `idIngredient`),
+  INDEX `fk_Product_has_Ingrediente_Ingredient1_idx` (`idIngredient` ASC) VISIBLE,
+  INDEX `fk_Product_has_Ingredient_Product_idx` (`idProduct` ASC) VISIBLE,
+  CONSTRAINT `fk_Product_has_Ingredient_Product`
+    FOREIGN KEY (`idProduct`)
+    REFERENCES `LaricaoDaJo`.`Product` (`idProduct`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Product_has_Ingredient_Ingredient1`
+    FOREIGN KEY (`idIngredient`)
+    REFERENCES `LaricaoDaJo`.`Ingredient` (`idIngredient`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Employee` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Employee` (
+  `idEmployee` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(250) NOT NULL,
+  `mail` VARCHAR(150) NULL DEFAULT '',
+  `user` VARCHAR(50) NOT NULL,
+  `password` VARCHAR(255) NOT NULL,
+  `level` INT NOT NULL DEFAULT 1,
+  `isActive` TINYINT(1) NOT NULL DEFAULT 1,
+  PRIMARY KEY (`idEmployee`),
+  UNIQUE INDEX `idEmployee_UNIQUE` (`idEmployee` ASC) VISIBLE,
+  UNIQUE INDEX `user_UNIQUE` (`user` ASC) VISIBLE)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Box` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Box` (
+  `idBox` INT NOT NULL AUTO_INCREMENT,
+  `idEmployee` INT NOT NULL,
+  `funds` DOUBLE NOT NULL DEFAULT 0,
+  `openingDate` DATETIME(10) NOT NULL,
+  `closingDate` DATETIME(10) NOT NULL,
+  `isOpen` TINYINT(1) NOT NULL DEFAULT 1,
+  `value` DOUBLE NOT NULL DEFAULT 0,
+  PRIMARY KEY (`idBox`),
+  UNIQUE INDEX `idBox_UNIQUE` (`idBox` ASC) VISIBLE,
+  INDEX `Box_idEmployee_idx` (`idEmployee` ASC) VISIBLE,
+  CONSTRAINT `Box_idEmployee`
+    FOREIGN KEY (`idEmployee`)
+    REFERENCES `LaricaoDaJo`.`Employee` (`idEmployee`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Withdrawal` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Withdrawal` (
+  `idWithdrawal` INT NOT NULL AUTO_INCREMENT,
+  `date` DATE NOT NULL,
+  `description` VARCHAR(300) NOT NULL,
+  `value` DOUBLE NOT NULL,
+  `idBox` INT NOT NULL,
+  PRIMARY KEY (`idWithdrawal`),
+  UNIQUE INDEX `idWithdrawal_UNIQUE` (`idWithdrawal` ASC) VISIBLE,
+  INDEX `withdrawal_idBox_idx` (`idBox` ASC) VISIBLE,
+  CONSTRAINT `withdrawal_idBox`
+    FOREIGN KEY (`idBox`)
+    REFERENCES `LaricaoDaJo`.`Box` (`idBox`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`FormOfPayment` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`FormOfPayment` (
+  `idFormOfPayment` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(50) NOT NULL,
+  `type` VARCHAR(50) NOT NULL,
+  `isActive` TINYINT(1) NOT NULL DEFAULT 1,
+  PRIMARY KEY (`idFormOfPayment`),
+  UNIQUE INDEX `idFormOfPayment_UNIQUE` (`idFormOfPayment` ASC) VISIBLE)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Order` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Order` (
+  `idOrder` INT NOT NULL AUTO_INCREMENT,
+  `number` INT NOT NULL,
+  `date` DATETIME(10) NOT NULL,
+  `idBox` INT NOT NULL,
+  `subtotal` DOUBLE NOT NULL,
+  `discount` DOUBLE NOT NULL DEFAULT 0,
+  `total` DOUBLE NOT NULL,
+  `idFormOfPayment` INT NOT NULL,
+  `status` VARCHAR(20) NOT NULL,
+  PRIMARY KEY (`idOrder`),
+  UNIQUE INDEX `idOrder_UNIQUE` (`idOrder` ASC) VISIBLE,
+  INDEX `Order_idBox_idx` (`idBox` ASC) VISIBLE,
+  INDEX `Order_idFormOfPayment_idx` (`idFormOfPayment` ASC) VISIBLE,
+  CONSTRAINT `Order_idBox`
+    FOREIGN KEY (`idBox`)
+    REFERENCES `LaricaoDaJo`.`Box` (`idBox`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE,
+  CONSTRAINT `Order_idFormOfPayment`
+    FOREIGN KEY (`idFormOfPayment`)
+    REFERENCES `LaricaoDaJo`.`FormOfPayment` (`idFormOfPayment`)
+    ON DELETE CASCADE
+    ON UPDATE CASCADE)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+DROP TABLE IF EXISTS `LaricaoDaJo`.`Order_has_Product` [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseDrop(Parser.java:2237)
+	at org.h2.command.Parser.parsePrepared(Parser.java:916)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Schema "LARICAODAJO" not found; SQL statement:
+CREATE TABLE IF NOT EXISTS `LaricaoDaJo`.`Order_has_Product` (
+  `Order_idOrder` INT NOT NULL,
+  `Product_idProduct` INT NOT NULL,
+  `amount` INT NOT NULL,
+  `total` DOUBLE NOT NULL,
+  PRIMARY KEY (`Order_idOrder`, `Product_idProduct`),
+  INDEX `fk_Order_has_Product_Product1_idx` (`Product_idProduct` ASC) VISIBLE,
+  INDEX `fk_Order_has_Product_Order1_idx` (`Order_idOrder` ASC) VISIBLE,
+  CONSTRAINT `fk_Order_has_Product_Order1`
+    FOREIGN KEY (`Order_idOrder`)
+    REFERENCES `LaricaoDaJo`.`Order` (`idOrder`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Order_has_Product_Product1`
+    FOREIGN KEY (`Product_idProduct`)
+    REFERENCES `LaricaoDaJo`.`Product` (`idProduct`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB [90079-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.Parser.getSchema(Parser.java:1194)
+	at org.h2.command.Parser.getSchema(Parser.java:1200)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8368)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.executeSQLStatementForExtraction(SQLExecutionHelper.java:829)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper.access$500(SQLExecutionHelper.java:61)
+	at org.netbeans.modules.db.dataview.output.SQLExecutionHelper$1Loader.run(SQLExecutionHelper.java:124)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.openide.util.RequestProcessor$Task.run(RequestProcessor.java:1418)
+	at org.netbeans.modules.openide.util.GlobalLookup.execute(GlobalLookup.java:45)
+	at org.openide.util.lookup.Lookups.executeWith(Lookups.java:278)
+	at org.openide.util.RequestProcessor$Processor.run(RequestProcessor.java:2033)
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SET SQL_MODE[*]=@OLD_SQL_MODE"; expected "@, AUTOCOMMIT, EXCLUSIVE, IGNORECASE, PASSWORD, SALT, MODE, COMPRESS_LOB, DATABASE, COLLATION, BINARY_COLLATION, UUID_COLLATION, CLUSTER, DATABASE_EVENT_LISTENER, ALLOW_LITERALS, DEFAULT_TABLE_TYPE, CREATE, HSQLDB.DEFAULT_TABLE_TYPE, PAGE_STORE, CACHE_TYPE, FILE_LOCK, DB_CLOSE_ON_EXIT, AUTO_SERVER, AUTO_SERVER_PORT, AUTO_RECONNECT, ASSERT, ACCESS_MODE_DATA, OPEN_NEW, JMX, PAGE_SIZE, RECOVER, NAMES, SCOPE_GENERATED_KEYS, SCHEMA, CATALOG, DATESTYLE, SEARCH_PATH, SCHEMA_SEARCH_PATH, JAVA_OBJECT_SERIALIZER, IGNORE_CATALOGS, SESSION, TRANSACTION, LOGSIZE, FOREIGN_KEY_CHECKS"; SQL statement:
+SET SQL_MODE=@OLD_SQL_MODE [42001-200]
+2021-01-23 20:02:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SET UNIQUE_CHECKS[*]=@OLD_UNIQUE_CHECKS"; expected "@, AUTOCOMMIT, EXCLUSIVE, IGNORECASE, PASSWORD, SALT, MODE, COMPRESS_LOB, DATABASE, COLLATION, BINARY_COLLATION, UUID_COLLATION, CLUSTER, DATABASE_EVENT_LISTENER, ALLOW_LITERALS, DEFAULT_TABLE_TYPE, CREATE, HSQLDB.DEFAULT_TABLE_TYPE, PAGE_STORE, CACHE_TYPE, FILE_LOCK, DB_CLOSE_ON_EXIT, AUTO_SERVER, AUTO_SERVER_PORT, AUTO_RECONNECT, ASSERT, ACCESS_MODE_DATA, OPEN_NEW, JMX, PAGE_SIZE, RECOVER, NAMES, SCOPE_GENERATED_KEYS, SCHEMA, CATALOG, DATESTYLE, SEARCH_PATH, SCHEMA_SEARCH_PATH, JAVA_OBJECT_SERIALIZER, IGNORE_CATALOGS, SESSION, TRANSACTION, LOGSIZE, FOREIGN_KEY_CHECKS"; SQL statement:
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS [42001-200]
+2021-01-23 20:29:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE LUANAGON_LARICAO.PRODUCT (
+  IDPRODUCT INT NOT NULL,
+  NUMBER INT NOT NULL,
+  DESCRIPTION VARCHAR(100) NOT NULL,
+  VALUE DOUBLE NOT NULL,
+  BARCODE VARCHAR(15) NULL DEFAULT '',
+  ISINDUSTRIALIZED TINYINT(1) NULL DEFAULT 0,
+  PRIMARY KEY (IDPRODUCT),
+  UNIQUE INDEX IDPRODUCT_UNIQUE (IDPRODUCT ASC) VISIBLE[*],
+  UNIQUE INDEX NUMBER_UNIQUE (NUMBER ASC) VISIBLE)
+ENGINE = INNODB"; expected "INDEX, USING, NOCHECK, CHECK, ,, )"; SQL statement:
+CREATE TABLE luanagon_laricao.Product (
+  idProduct INT NOT NULL,
+  number INT NOT NULL,
+  description VARCHAR(100) NOT NULL,
+  value DOUBLE NOT NULL,
+  barcode VARCHAR(15) NULL DEFAULT '',
+  isIndustrialized TINYINT(1) NULL DEFAULT 0,
+  PRIMARY KEY (idProduct),
+  UNIQUE INDEX idProduct_UNIQUE (idProduct ASC) VISIBLE,
+  UNIQUE INDEX number_UNIQUE (number ASC) VISIBLE)
+ENGINE = InnoDB [42001-200]
+2021-01-23 21:31:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ""LUANAGON_LARICAO"".ORDER[*]
+(
+	IDORDER INT NOT NULL,
+	NUMBER INT NOT NULL,
+	DATE TIMESTAMP NOT NULL,
+	IDBOX INT NOT NULL,
+	SUBTOTAL DOUBLE PRECISION NOT NULL,
+	DISCOUNT DOUBLE PRECISION DEFAULT 0 NOT NULL,
+	TOTAL DOUBLE PRECISION NOT NULL,
+	IDFORMOFPAYMENT INT NOT NULL,
+	STATUS VARCHAR(20) NOT NULL,
+	PRIMARY KEY (IDORDER)
+)"; expected "identifier"; SQL statement:
+create table "LUANAGON_LARICAO".Order
+(
+	idOrder INT not null,
+	number INT not null,
+	date TIMESTAMP not null,
+	idBox INT not null,
+	subtotal DOUBLE PRECISION not null,
+	discount DOUBLE PRECISION default 0 not null,
+	total DOUBLE PRECISION not null,
+	idFormOfPayment INT not null,
+	status VARCHAR(20) not null,
+	primary key (idOrder)
+) [42001-200]
+2021-01-23 21:32:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ""LUANAGON_LARICAO"".ORDER[*]
+(
+	IDORDER INT NOT NULL,
+	NUMBER INT NOT NULL,
+	DATE TIMESTAMP NOT NULL,
+	IDBOX INT NOT NULL,
+	SUBTOTAL DOUBLE PRECISION NOT NULL,
+	DISCOUNT DOUBLE PRECISION DEFAULT 0 NOT NULL,
+	TOTAL DOUBLE PRECISION NOT NULL,
+	IDFORMOFPAYMENT INT NOT NULL,
+	STATUS VARCHAR(20) NOT NULL,
+	PRIMARY KEY (IDORDER)
+)"; expected "identifier"; SQL statement:
+create table "LUANAGON_LARICAO".Order
+(
+	idOrder INT not null,
+	number INT not null,
+	date TIMESTAMP not null,
+	idBox INT not null,
+	subtotal DOUBLE PRECISION not null,
+	discount DOUBLE PRECISION default 0 not null,
+	total DOUBLE PRECISION not null,
+	idFormOfPayment INT not null,
+	status VARCHAR(20) not null,
+	primary key (idOrder)
+) [42001-200]
+2021-01-23 21:33:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ""LUANAGON_LARICAO"".ORDER[*]
+(
+	IDORDER INT NOT NULL,
+	NUMBER INT NOT NULL,
+	DATE TIMESTAMP NOT NULL,
+	IDBOX INT NOT NULL,
+	SUBTOTAL DOUBLE PRECISION NOT NULL,
+	DISCOUNT DOUBLE PRECISION NOT NULL,
+	TOTAL DOUBLE PRECISION NOT NULL,
+	IDFORMOFPAYMENT INT NOT NULL,
+	STATUS VARCHAR(20) NOT NULL,
+	PRIMARY KEY (IDORDER)
+)"; expected "identifier"; SQL statement:
+create table "LUANAGON_LARICAO".Order
+(
+	idOrder INT not null,
+	number INT not null,
+	date TIMESTAMP not null,
+	idBox INT not null,
+	subtotal DOUBLE PRECISION not null,
+	discount DOUBLE PRECISION not null,
+	total DOUBLE PRECISION not null,
+	idFormOfPayment INT not null,
+	status VARCHAR(20) not null,
+	primary key (idOrder)
+) [42001-200]
+2021-01-23 21:34:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ""LUANAGON_LARICAO"".ORDER[*]
+(
+	IDORDER INT NOT NULL,
+	NUMBER INT NOT NULL,
+	DATE TIMESTAMP NOT NULL,
+	IDBOX INT NOT NULL,
+	SUBTOTAL DOUBLE PRECISION NOT NULL,
+	DISCOUNT DOUBLE PRECISION NOT NULL,
+	TOTAL DOUBLE PRECISION NOT NULL,
+	IDFORMOFPAYMENT INT NOT NULL,
+	STATUS VARCHAR(20) NOT NULL,
+	PRIMARY KEY (IDORDER)
+)"; expected "identifier"; SQL statement:
+create table "LUANAGON_LARICAO".Order
+(
+	idOrder INT not null,
+	number INT not null,
+	date TIMESTAMP not null,
+	idBox INT not null,
+	subtotal DOUBLE PRECISION not null,
+	discount DOUBLE PRECISION not null,
+	total DOUBLE PRECISION not null,
+	idFormOfPayment INT not null,
+	status VARCHAR(20) not null,
+	primary key (idOrder)
+) [42001-200]
+2021-01-23 21:34:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ""LUANAGON_LARICAO"".ORDER[*]
+(
+	IDORDER INT NOT NULL,
+	NUMBER INT NOT NULL,
+	DATE TIMESTAMP NOT NULL,
+	IDBOX INT NOT NULL,
+	SUBTOTAL DOUBLE PRECISION NOT NULL,
+	DISCOUNT DOUBLE PRECISION NOT NULL,
+	TOTAL DOUBLE PRECISION NOT NULL,
+	IDFORMOFPAYMENT INT NOT NULL,
+	PRIMARY KEY (IDORDER)
+)"; expected "identifier"; SQL statement:
+create table "LUANAGON_LARICAO".Order
+(
+	idOrder INT not null,
+	number INT not null,
+	date TIMESTAMP not null,
+	idBox INT not null,
+	subtotal DOUBLE PRECISION not null,
+	discount DOUBLE PRECISION not null,
+	total DOUBLE PRECISION not null,
+	idFormOfPayment INT not null,
+	primary key (idOrder)
+) [42001-200]
+2021-01-23 21:34:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ""LUANAGON_LARICAO"".ORDER[*]
+(
+	IDORDER INT NOT NULL,
+	NUMBER INT NOT NULL,
+	DATE TIMESTAMP NOT NULL,
+	IDBOX INT NOT NULL,
+	SUBTOTAL DOUBLE PRECISION NOT NULL,
+	DISCOUNT DOUBLE PRECISION NOT NULL,
+	TOTAL DOUBLE PRECISION NOT NULL,
+	PRIMARY KEY (IDORDER)
+)"; expected "identifier"; SQL statement:
+create table "LUANAGON_LARICAO".Order
+(
+	idOrder INT not null,
+	number INT not null,
+	date TIMESTAMP not null,
+	idBox INT not null,
+	subtotal DOUBLE PRECISION not null,
+	discount DOUBLE PRECISION not null,
+	total DOUBLE PRECISION not null,
+	primary key (idOrder)
+) [42001-200]
+2021-01-23 21:34:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ""LUANAGON_LARICAO"".ORDER[*]
+(
+	IDORDER INT NOT NULL,
+	NUMBER INT NOT NULL,
+	DATE TIMESTAMP NOT NULL,
+	IDBOX INT NOT NULL,
+	SUBTOTAL DOUBLE PRECISION NOT NULL,
+	DISCOUNT DOUBLE PRECISION NOT NULL,
+	PRIMARY KEY (IDORDER)
+)"; expected "identifier"; SQL statement:
+create table "LUANAGON_LARICAO".Order
+(
+	idOrder INT not null,
+	number INT not null,
+	date TIMESTAMP not null,
+	idBox INT not null,
+	subtotal DOUBLE PRECISION not null,
+	discount DOUBLE PRECISION not null,
+	primary key (idOrder)
+) [42001-200]
+2021-01-23 21:34:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ""LUANAGON_LARICAO"".ORDER[*]
+(
+	IDORDER INT NOT NULL,
+	NUMBER INT NOT NULL,
+	DATE TIMESTAMP NOT NULL,
+	IDBOX INT NOT NULL,
+	SUBTOTAL DOUBLE PRECISION NOT NULL,
+	PRIMARY KEY (IDORDER)
+)"; expected "identifier"; SQL statement:
+create table "LUANAGON_LARICAO".Order
+(
+	idOrder INT not null,
+	number INT not null,
+	date TIMESTAMP not null,
+	idBox INT not null,
+	subtotal DOUBLE PRECISION not null,
+	primary key (idOrder)
+) [42001-200]
+2021-01-23 21:34:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ""LUANAGON_LARICAO"".ORDER[*]
+(
+	IDORDER INT NOT NULL,
+	NUMBER INT NOT NULL,
+	DATE TIMESTAMP NOT NULL,
+	IDBOX INT NOT NULL,
+	PRIMARY KEY (IDORDER)
+)"; expected "identifier"; SQL statement:
+create table "LUANAGON_LARICAO".Order
+(
+	idOrder INT not null,
+	number INT not null,
+	date TIMESTAMP not null,
+	idBox INT not null,
+	primary key (idOrder)
+) [42001-200]
+2021-01-23 21:34:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ""LUANAGON_LARICAO"".ORDER[*]
+(
+	IDORDER INT NOT NULL,
+	NUMBER INT NOT NULL,
+	DATE TIMESTAMP NOT NULL,
+	PRIMARY KEY (IDORDER)
+)"; expected "identifier"; SQL statement:
+create table "LUANAGON_LARICAO".Order
+(
+	idOrder INT not null,
+	number INT not null,
+	date TIMESTAMP not null,
+	primary key (idOrder)
+) [42001-200]
+2021-01-23 21:34:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ""LUANAGON_LARICAO"".ORDER[*]
+(
+	IDORDER INT NOT NULL,
+	NUMBER INT NOT NULL,
+	PRIMARY KEY (IDORDER)
+)"; expected "identifier"; SQL statement:
+create table "LUANAGON_LARICAO".Order
+(
+	idOrder INT not null,
+	number INT not null,
+	primary key (idOrder)
+) [42001-200]
+2021-01-23 21:34:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ""LUANAGON_LARICAO"".ORDER[*]
+(
+	IDORDER INT NOT NULL,
+	PRIMARY KEY (IDORDER)
+)"; expected "identifier"; SQL statement:
+create table "LUANAGON_LARICAO".Order
+(
+	idOrder INT not null,
+	primary key (idOrder)
+) [42001-200]
+2021-01-23 21:35:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ""LUANAGON_LARICAO"".ORDER[*]
+(
+	IDORDER INT NOT NULL,
+	PRIMARY KEY (IDORDER)
+)"; expected "identifier"; SQL statement:
+create table "LUANAGON_LARICAO".Order
+(
+	idorder INT not null,
+	primary key (idorder)
+) [42001-200]
+2021-01-23 21:35:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE ""LUANAGON_LARICAO"".ORDER[*]
+(
+	IDORDER INT NOT NULL,
+	PRIMARY KEY (IDORDER)
+)"; expected "identifier"; SQL statement:
+create table "LUANAGON_LARICAO".ORDER
+(
+	idorder INT not null,
+	primary key (idorder)
+) [42001-200]
+2021-01-23 21:48:23 database: flush
+org.h2.message.DbException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/mrbru/Documents/GitHub/LaricaoDaJo/src/main/resources/br/com/brunoricardo/laricaodajo/database/databse.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.message.DbException.convert(DbException.java:347)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:90)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2787)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:441)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:404)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:3343)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:162)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:95)
+	at org.h2.engine.Database.getPageStore(Database.java:2739)
+	at org.h2.engine.Database.open(Database.java:769)
+	at org.h2.engine.Database.openDatabase(Database.java:319)
+	at org.h2.engine.Database.<init>(Database.java:313)
+	at org.h2.engine.Engine.openSession(Engine.java:69)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at com.rp.sql.SQLManager.<init>(Unknown Source)
+	at com.rp.gui.database.ConnectionUtil.getSQLManager(Unknown Source)
+	at com.rp.gui.database.ConnectionUtil.connect(Unknown Source)
+	at com.rp.gui.database.ConnectionUtil.doConnect(Unknown Source)
+	at com.rp.gui.database.ConnectionUtil.doAddConnect(Unknown Source)
+	at com.rp.gui.database.ConnectionWizard.doConnect(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.rp.gui.util.CustomSwingWorker.construct(Unknown Source)
+	at com.rp.gui.util.SwingWorker$2.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/mrbru/Documents/GitHub/LaricaoDaJo/src/main/resources/br/com/brunoricardo/laricaodajo/database/databse.mv.db [1.4.199/7]" [50000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 37 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/mrbru/Documents/GitHub/LaricaoDaJo/src/main/resources/br/com/brunoricardo/laricaodajo/database/databse.mv.db [1.4.199/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:883)
+	at org.h2.mvstore.FileStore.open(FileStore.java:172)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:390)
+	... 31 more
+2021-01-23 21:48:50 database: wrong user or password; user: "ADMIN"
+org.h2.message.DbException: Wrong user name or password [28000-199]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:126)
+	at org.h2.engine.Engine.openSession(Engine.java:201)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:178)
+	at org.h2.engine.Engine.createSession(Engine.java:161)
+	at org.h2.engine.Engine.createSession(Engine.java:31)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:336)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:169)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:148)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql/java.sql.DriverManager.getConnection(Unknown Source)
+	at com.rp.sql.SQLManager.<init>(Unknown Source)
+	at com.rp.gui.database.ConnectionUtil.getSQLManager(Unknown Source)
+	at com.rp.gui.database.ConnectionUtil.connect(Unknown Source)
+	at com.rp.gui.database.ConnectionUtil.doConnect(Unknown Source)
+	at com.rp.gui.database.ConnectionUtil.doConnect(Unknown Source)
+	at com.rp.gui.database.ConnectionWizard.doConnect(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.rp.gui.util.CustomSwingWorker.construct(Unknown Source)
+	at com.rp.gui.util.SwingWorker$2.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Wrong user name or password [28000-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:459)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	... 27 more
+2021-01-23 21:52:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT NEXT_VALUE FROM $[*]INGRES.IISEQUENCES WHERE SEQ_NAME = 'IDBOX' AND SEQ_OWNER = 'LUANAGON_LARICAO' "; expected "identifier"; SQL statement:
+select next_value from $ingres.iisequences where seq_name = 'IDBOX' and seq_owner = 'LUANAGON_LARICAO' [42001-199]
+2021-01-23 21:53:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Cannot parse "TIMESTAMP" constant "10"; SQL statement:
+INSERT INTO LUANAGON_LARICAO.BOX (IDBOX, IDEMPLOYEE, FUNDS, OPENINGDATE, CLOSINGDATE, ISOPEN, VALUE) VALUES (null, 1, 20, '10', '10', 1, 0) -- (NULL, 1, 20, '10', '10', 1, 0) [22007-199]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:455)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:427)
+	at org.h2.message.DbException.get(DbException.java:194)
+	at org.h2.value.ValueTimestamp.parse(ValueTimestamp.java:140)
+	at org.h2.value.Value.convertToTimestamp(Value.java:1099)
+	at org.h2.value.Value.convertTo(Value.java:778)
+	at org.h2.value.Value.convertTo(Value.java:735)
+	at org.h2.table.Column.convert(Column.java:199)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:164)
+	at org.h2.command.dml.Insert.update(Insert.java:132)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:133)
+	at org.h2.command.Command.executeUpdate(Command.java:267)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:169)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:126)
+	at com.rp.sql.SQLManager.executeUpdate(Unknown Source)
+	at com.rp.sql.SQLManager.executeUpdate(Unknown Source)
+	at com.rp.gui.database.SQLUtil.runStatementsFromTextArea(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.rp.gui.util.CustomSwingWorker.construct(Unknown Source)
+	at com.rp.gui.util.SwingWorker$2.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.IllegalArgumentException: 10
+	at org.h2.util.DateTimeUtils.parseDateValue(DateTimeUtils.java:366)
+	at org.h2.util.DateTimeUtils.parseTimestamp(DateTimeUtils.java:528)
+	at org.h2.value.ValueTimestamp.parse(ValueTimestamp.java:138)
+	... 20 more
+2021-01-24 17:40:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "ALTER TABLE ""LUANAGON_LARICAO"".""ORDER_HAS_PRODUCT"" ADD ORDER[*] INT NOT NULL"; expected "identifier"; SQL statement:
+alter table "LUANAGON_LARICAO"."ORDER_HAS_PRODUCT" add order INT not null [42001-200]
+2021-01-26 21:04:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement " AUTO_INCREMENT[*]"; expected "ALTER, ANALYZE"; SQL statement:
+ AUTO_INCREMENT [42001-200]
+2021-01-26 21:05:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Constraint "CONSTRAINT_7" already exists; SQL statement:
+
+
+ALTER TABLE LUANAGON_LARICAO.EMPLOYEE
+   ADD CONSTRAINT CONSTRAINT_7 UNIQUE ("USER") [90045-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:114)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at workbench.sql.commands.DdlCommand.execute(DdlCommand.java:157)
+	at workbench.sql.StatementRunner.runStatement(StatementRunner.java:562)
+	at workbench.gui.sql.SqlPanel.displayResult(SqlPanel.java:3493)
+	at workbench.gui.sql.SqlPanel.runStatement(SqlPanel.java:2216)
+	at workbench.gui.sql.SqlPanel$16.run(SqlPanel.java:2154)
+2021-01-26 21:06:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Constraint "CONSTRAINT_1" already exists; SQL statement:
+
+
+ALTER TABLE LUANAGON_LARICAO.PRODUCT
+   ADD CONSTRAINT CONSTRAINT_1 UNIQUE (NUMBER) [90045-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:114)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at workbench.sql.commands.DdlCommand.execute(DdlCommand.java:157)
+	at workbench.sql.StatementRunner.runStatement(StatementRunner.java:562)
+	at workbench.gui.sql.SqlPanel.displayResult(SqlPanel.java:3493)
+	at workbench.gui.sql.SqlPanel.runStatement(SqlPanel.java:2216)
+	at workbench.gui.sql.SqlPanel$16.run(SqlPanel.java:2154)
+2021-01-26 21:19:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "IDORDERED" not found; SQL statement:
+ALTER TABLE LUANAGON_LARICAO.ORDER_HAS_PRODUCT ADD CONSTRAINT FK_ORDER_HAS_PRODUCT_ORDERED FOREIGN KEY (IDORDERER) REFERENCES PRODUCT(IDORDERED)  ON DELETE CASCADE [42122-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:453)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.table.Table.getColumn(Table.java:703)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:115)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:231)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:78)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at workbench.sql.commands.DdlCommand.execute(DdlCommand.java:157)
+	at workbench.sql.StatementRunner.runStatement(StatementRunner.java:562)
+	at workbench.gui.sql.SqlPanel.displayResult(SqlPanel.java:3493)
+	at workbench.gui.sql.SqlPanel.runStatement(SqlPanel.java:2216)
+	at workbench.gui.sql.SqlPanel$16.run(SqlPanel.java:2154)
+2021-01-26 21:23:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Cannot drop "ORDERED" because "FK_ORDER_HAS_PRODUCT_ORDERED" depends on it; SQL statement:
+DROP TABLE LUANAGON_LARICAO.ORDERED [90107-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:98)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:124)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at workbench.sql.commands.DdlCommand.execute(DdlCommand.java:157)
+	at workbench.sql.StatementRunner.runStatement(StatementRunner.java:562)
+	at workbench.gui.sql.SqlPanel.displayResult(SqlPanel.java:3493)
+	at workbench.gui.sql.SqlPanel.runStatement(SqlPanel.java:2216)
+	at workbench.gui.sql.SqlPanel$16.run(SqlPanel.java:2154)
+2021-01-26 21:24:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Constraint "FK_ORDER_HAS_PRODUCT_ORDERED" not found; SQL statement:
+ALTER TABLE LUANAGON_LARICAO.ORDER_HAS_PRODUCT DROP CONSTRAINT FK_ORDER_HAS_PRODUCT_ORDERED [90057-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.command.ddl.AlterTableDropConstraint.update(AlterTableDropConstraint.java:41)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:198)
+	at org.h2.command.Command.executeUpdate(Command.java:251)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:228)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at workbench.sql.commands.DdlCommand.execute(DdlCommand.java:157)
+	at workbench.sql.StatementRunner.runStatement(StatementRunner.java:562)
+	at workbench.sql.BatchRunner.executeScript(BatchRunner.java:900)
+	at workbench.sql.BatchRunner.runScript(BatchRunner.java:818)
+	at workbench.gui.components.ExecuteSqlPanel.runSQL(ExecuteSqlPanel.java:283)
+	at workbench.gui.dbobjects.RunScriptPanel.runSQL(RunScriptPanel.java:115)
+	at workbench.gui.components.ExecuteSqlPanel$1.run(ExecuteSqlPanel.java:251)
+2021-01-26 21:25:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Sequence "SYSTEM_SEQUENCE_33BB833A_3D03_43D4_B2B1_115113B4AB06" not found; SQL statement:
+
+
+CREATE CACHED TABLE LUANAGON_LARICAO.ORDERER
+(
+   IDORDERER          INTEGER       DEFAULT NEXT VALUE FOR "LUANAGON_LARICAO"."SYSTEM_SEQUENCE_33BB833A_3D03_43D4_B2B1_115113B4AB06" NOT NULL,
+   NUMBER             INTEGER       NOT NULL,
+   DATE               TIMESTAMP     NOT NULL,
+   IDBOX              INTEGER       NOT NULL,
+   SUBTOTAL           DOUBLE        NOT NULL,
+   DISCOUNT           DOUBLE        DEFAULT 0 NOT NULL,
+   TOTAL              DOUBLE        NOT NULL,
+   AMOUNTRECEIVED     DOUBLE        NOT NULL,
+   IDFORMOFPAYMENT    INTEGER       NOT NULL,
+   STATUS             VARCHAR(20)   NOT NULL,
+   FORMOFCONSUMPTION  VARCHAR(50)   NOT NULL
+) [90036-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.schema.Schema.getSequence(Schema.java:585)
+	at org.h2.command.Parser.readSequence(Parser.java:7671)
+	at org.h2.command.Parser.readTermWithIdentifier(Parser.java:4593)
+	at org.h2.command.Parser.readTerm(Parser.java:4311)
+	at org.h2.command.Parser.readFactor(Parser.java:3343)
+	at org.h2.command.Parser.readSum(Parser.java:3330)
+	at org.h2.command.Parser.readConcat(Parser.java:3305)
+	at org.h2.command.Parser.readCondition(Parser.java:3108)
+	at org.h2.command.Parser.readExpression(Parser.java:3059)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:5727)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:8442)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:8379)
+	at org.h2.command.Parser.parseCreate(Parser.java:6276)
+	at org.h2.command.Parser.parsePrepared(Parser.java:903)
+	at org.h2.command.Parser.parse(Parser.java:843)
+	at org.h2.command.Parser.parse(Parser.java:815)
+	at org.h2.command.Parser.prepareCommand(Parser.java:738)
+	at org.h2.engine.Session.prepareLocal(Session.java:657)
+	at org.h2.engine.Session.prepareCommand(Session.java:595)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1235)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:212)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:201)
+	at workbench.sql.commands.DdlCommand.execute(DdlCommand.java:157)
+	at workbench.sql.StatementRunner.runStatement(StatementRunner.java:562)
+	at workbench.gui.sql.SqlPanel.displayResult(SqlPanel.java:3493)
+	at workbench.gui.sql.SqlPanel.runStatement(SqlPanel.java:2216)
+	at workbench.gui.sql.SqlPanel$16.run(SqlPanel.java:2154)
+2021-01-26 21:27:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "ORDERED" not found; SQL statement:
+ALTER TABLE LUANAGON_LARICAO.ORDER_HAS_PRODUCT ADD CONSTRAINT FK_ORDER_HAS_PRODUCT_ORDERER FOREIGN KEY (IDORDERER) REFERENCES ORDERED(IDORDERER)  ON DELETE CASCADE [42102-200]

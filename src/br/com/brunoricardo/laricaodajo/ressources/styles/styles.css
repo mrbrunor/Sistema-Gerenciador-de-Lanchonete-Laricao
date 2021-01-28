@@ -1,0 +1,76 @@
+#login {
+    -fx-background-image: url(../background/login.png);
+    -fx-background-repeat: stretch;   
+    -fx-background-position: center center; 
+    -fx-font-family: "Perpetua";
+    -fx-font-size: 14px;
+}
+#login .font-white {
+    -fx-text-fill: white;
+}
+.label-field {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+#login .text-field, password-field {
+    -jfx-focus-color: #00A651;
+    -jfx-unfocus-color: white;
+    -fx-text-fill: black;
+    -fx-pref-width: 300px;
+}
+#login .button {
+    -fx-background-color: white;
+    -fx-background-radius: 14px;
+    -fx-pref-height: 40px;
+    -fx-text-fill: black;    
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2;
+    -fx-border-radius: 10px;
+}
+#login .button:focused{
+    -fx-border-color: #00A651;    
+}
+
+#vendas {
+    -fx-background-image: url(../background/general.png);
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-font-family: "Perpetua";
+    -fx-font-size: 15px;
+}
+
+#vendas .label{
+    -fx-font-family: "Perpetua";
+}
+
+#vendas .title{
+    -fx-font-family: "Perpetua";
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+#vendas .subtitle{
+    -fx-font-family: "Perpetua";
+    -fx-font-size: 18px;
+}
+
+#vendas .button {
+    -fx-background-color: #cac7c3;
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -fx-text-fill: black;
+    -fx-border-width: 2;
+    -fx-font-family: "Perpetua";
+}
+
+#vendas .text-field {
+    -jfx-focus-color: #00A651;
+    -fx-min-height: 40px;
+    -fx-pref-height: 40px;
+    -fx-max-height: 40px;
+    -jfx-unfocus-color: white;
+    -fx-text-fill: black;
+    -fx-font-family: "Perpetua";
+    -fx-font-size: 18px;
+}
