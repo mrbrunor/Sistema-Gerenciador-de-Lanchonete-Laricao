@@ -6,18 +6,19 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+
 public class Main extends Application {
 
+    public static Parent root;
+
     @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("/br/com/brunoricardo/laricaodajo/view/login.fxml"));
-        primaryStage.setTitle("Laricão da Jô");
-        primaryStage.setScene(new Scene(root, 1004, 680));
-        primaryStage.show();
-    }
+    public void start(Stage stage) throws Exception {
+        root = FXMLLoader.load(getClass().getResource("/br/com/brunoricardo/laricaodajo/view/mainView.fxml"));
 
+        Scene scene = new Scene(root);
 
-    public static void main(String[] args) {
-        launch(args);
+        stage.setScene(scene);
+        stage.resizableProperty().setValue(Boolean.FALSE);
+        stage.show();
     }
 }
